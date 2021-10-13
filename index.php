@@ -1,0 +1,360 @@
+<?php
+// Query params are: utm_source={campaign_type}&utm_campaign={campaign_id}&utm_medium={gbid}&utm_content={ad_id}&utm_term={keyword} 
+
+require_once dirname(__FILE__) . '/kclient.php';
+$client = new KClient('https://blackwordstrack.ru/api.php?', 'dvptv4vdpgpjjxjz2ntbztpglr34gq9t');
+$client->sendAllParams();       // to send all params from page query
+$client->forceRedirectOffer();       // redirect to offer if an offer is chosen
+// $client->param('sub_id_5', '123'); // you can send any params
+// $client->keyword('PASTE_KEYWORD');  // send custom keyword
+// $client->currentPageAsReferrer(); // to send current page URL as click referrer
+// $client->debug();              // to enable debug mode and show the errors
+// $client->execute();             // request to api, show the output and continue
+$client->executeAndBreak();     // to stop page execution if there is redirect or some output
+
+?>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>NET CELLULITE - анти-целлюлитный марафон</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+      <header class="header">
+        <div class="header__inner container"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt="логотип body boost"></a></div>
+      </header>
+      <main class="main">
+        <div class="main__bg"></div>
+        <div class="main__wrapper">
+          <div class="main__inner container"> 
+            <h1 class="main__title">анти-<br>целлюлитный марафон</h1>
+            <div class="main__text">Стройное тело и идеальная кожа за 30 дней</div>
+              <div class="ad"> 
+                <div class="ad__block">
+                  <p class="ad__text">В подарок за подписку на курс вы получите <mark>бесплатный гайд</mark> по созданию <span>креативных сторис в Instagram</span></p><img class="ad__img" src="img/promo-icon-gift.png" alt="подарок">
+                </div>
+              </div><a class="main__btn btn" href="#" data-hystmodal="#myModal">Пройти тест на целлюлит</a><img class="main__img--oranges" src="img/main-oranges-mobile.png" alt=""><img class="main__img--peaches-mobile" src="img/main-peaches-mobile.png" alt="">
+            <div class="censored"><img class="main__img--tablet" src="img/main-girl-after-censor.png" alt=""></div>
+            <div class="censored"><img class="main__img--mobile" src="img/main-girl-mobile-censor.png" alt=""></div>
+            <div class="censored">
+              <div class="main__slider"><img class="main__slide-after" src="img/main-girl-after-censor.png" alt=""></div>
+            </div>
+          </div>
+        </div><img class="main__img main__img--peaches main__img--peach1" src="img/main-peach.png" alt=""><img class="main__img main__img--peaches main__img--peach2" src="img/main-peach.png" alt=""><img class="main__img main__img--peaches main__img--peach3" src="img/main-peach.png" alt=""><img class="main__img main__img--peaches main__img--peach4" src="img/main-peach.png" alt=""><img class="main__img main__img--grapefruits main__img--grapefruit1" src="img/main-grapefruit-1.png" alt=""><img class="main__img main__img--grapefruits main__img--grapefruit2" src="img/main-grapefruit-1.png" alt=""><img class="main__img main__img--grapefruits main__img--grapefruit3" src="img/main-grapefruit-1.png" alt=""><img class="main__img main__img--grapefruits main__img--grapefruit4" src="img/main-grapefruit-1.png" alt=""><img class="main__img main__img--grapefruits main__img--grapefruit5" src="img/main-grapefruit-1.png" alt=""><img class="main__img main__img--grapefruits main__img--grapefruit6" src="img/main-grapefruit-1.png" alt="">
+      </main>
+      <div class="tape"> 
+        <ul class="tape__list"> 
+          <li class="tape__item">Обертывания и скрабы</li>
+          <li class="tape__item"> <img src="img/tape-icon-star.svg" alt=""></li>
+          <li class="tape__item">Домашние тренировки</li>
+          <li class="tape__item"> <img src="img/tape-icon-star.svg" alt=""></li>
+          <li class="tape__item">База знаний по питанию</li>
+          <li class="tape__item"> <img src="img/tape-icon-star.svg" alt=""></li>
+          <li class="tape__item">Антицеллюлитные массажи</li>
+          <li class="tape__item"> <img src="img/tape-icon-star.svg" alt=""></li>
+          <li class="tape__item">Обертывания и скрабы</li>
+          <li class="tape__item"> <img src="img/tape-icon-star.svg" alt=""></li>
+          <li class="tape__item">Домашние тренировки</li>
+          <li class="tape__item"> <img src="img/tape-icon-star.svg" alt=""></li>
+          <li class="tape__item">База знаний по питанию</li>
+        </ul>
+      </div>
+      <div class="course">
+        <div class="course__inner container">
+          <div class="course__wrapper">
+            <h2 class="course__title">Этот курс для тебя, если:</h2>
+            <ul class="course__list">
+              <li class="course__item">Пробовала много разных диет и техник, но они так и не помогли</li>
+              <li class="course__item">Чувствуешь упадок сил, отсутствие мотивации и женского счастья</li>
+              <li class="course__item">Хочешь избавиться от целлюлита, изменить свою внешность и чувствовать себя уверенней</li>
+              <li class="course__item">Хочешь здоровое и подтянутое тело, которым будешь гордиться</li>
+            </ul>
+          </div>
+          <div class="censored"><img class="course__img course__img--bgbl" src="img/course-bg-back-left.png" alt=""><img class="course__img course__img--bgbr" src="img/course-bg-back-right.png" alt=""><img class="course__img course__img--woman" src="img/course-woman-censor.png" alt=""></div><img class="course__img course__img--bgfl" src="img/course-bg-front-left.png" alt=""><img class="course__img course__img--bgfr" src="img/course-bg-front-right.png" alt="">
+          <div class="censored"><img class="course__img course__img--bg-mobile" src="img/course-back-grapefruit.png" alt=""><img class="course__img course__img--woman-mobile" src="img/course-woman-mobile-censor.png" alt=""><img class="course__img course__img--bg-mobile1" src="img/course-back-grapefruits.png" alt=""></div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about__inner container"> 
+          <div class="about__block">
+            <h2 class="about__title">ЧТО ТЕБЯ ЖДЕТ?</h2>
+            <div class="about__images"> <img class="about__img" src="img/about-icon-1.svg" alt=""><img class="about__img" src="img/about-icon-2.svg" alt=""><img class="about__img" src="img/about-icon-3.svg" alt=""><img class="about__img" src="img/about-icon-4.svg" alt=""><img class="about__img" src="img/about-icon-5.svg" alt=""></div>
+            <ul class="about__list"> 
+              <li class="about__item">Программа питания на 28 дней</li>
+              <li class="about__item">Уникальные рецепты скрабов и обертываний</li>
+              <li class="about__item">Четкий план по уходу за собой</li>
+              <li class="about__item">Система тренировок и упражнений для ягодиц</li>
+              <li class="about__item">Гайд по правильному питанию</li>
+              <li class="about__item">Новые привычки и образ жизни</li>
+              <li class="about__item">Любовь к себе и своему телу!!</li>
+            </ul>
+            <div class="censored"><img class="about__img-bg about__img-bg--back" src="img/about-bg-back.png" alt=""><img class="about__img-bg about__img-bg--front" src="img/about-bg-front-censor.png" alt=""><img class="about__img-bg about__img-bg--scrab" src="img/about-bg.png" alt=""></div>
+          </div>
+          <div class="censored"><img class="about__img-bg about__img-bg--mobile" src="img/about-bg-mobile-censor.png" alt=""><img class="about__img-bg about__img-bg--mobile2" src="img/about-bg-mobile-2.png" alt=""></div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="result__inner container"> 
+          <h2 class="result__title">Добейся лучшего результата</h2>
+          <div class="result__slider">
+              <div class="slider">
+                <div class="slider__buttons"> 
+                  <button class="slider__btn slider__btn--prev"><img src="img/slider-arrow-left.svg" alt="пред"></button>
+                  <button class="slider__btn slider__btn--next"><img src="img/slider-arrow-right.svg" alt="след"></button>
+                </div>
+                <div class="slider__wrapper"> 
+                  <div class="slider__slides censored">
+                    <div class="slider__slide"> 
+                      <div class="slider__text">Я никогда не жаловалась на свою фигуру, но и худышкой меня тоже не назвать, В зал ходить не было мотивации, диет особо я тоже не придерживалась, но когда приблизился отпуск на море я поняла, что я просто стесняюсь надеть купальник и у меня есть только 1 месяц, чтобы что-то поменять( Я давно слышала про этот марафон и рискнула его приобрести, девочки!ни жалею ни капли! За короткий срок ушли отеки, улучшился тонус кожи и объемы просто растаяли!Моей радости нет предела, советую!</div>
+                    </div>
+                    <div class="slider__slide"> 
+                      <div class="slider__text">Я так рада, что решилась на этот курс) Была наслышана, что в марафоне хорошая программа и легкие упражнения даже для новочков. Всего за 2 месяца я похудела на 27 кг, сейчас я вешу 88,1 кг, с талии ушло 25 см, с бедер 17 и с груди 12. Смотрю на старое платье с размером 3хл и радуюсь новому с размером м)) даже подумать не могла, что после марафона будут такие офигенные результаты)) спасибо за внимание, всем огромных отвесиков, девочки</div>
+                    </div>
+                    <div class="slider__slide"> 
+                      <div class="slider__text">Недавно при росте 169 см мой вес составлял 91 кг. Всегда любила поесть, семья большая, часто застолья и праздники, потом диеты, срывы... А надо было всего лишь узнать, как правильно питаться и разобраться в уходе за кожей. Сегодня мой вес 60 кг. Чтобы сбросить лишнее, конечно, пришлось попотеть. Чувствую себя отлично, особенно приятно ходить в магазин и надевать одежду размер М. Теперь я могу носить обтягивающие наряды, у меня больше нет висящих боков и животика.</div>
+                    </div>
+                    <div class="slider__slide"> 
+                      <div class="slider__text">Девченки, всем привет) В 24 года я весила 105 кг, при росте 162 см. Это было просто ужасно. Все говорят нужно кушать правильную еду, по 5-6 раз в день, большенство из вас не увидят после этого никаких результатов и забросят такие диеты и правильное питание нафиг. Помогла мне анти-целлюлитная программа! Я была приятно удивлена, что это не только маски и обертывания, но и полноценная диета с объяснениями и несложные тренировки!Спасибо!</div>
+                    </div>
+                    <div class="slider__slide"> 
+                      <div class="slider__text">я думала, что мне уже ничего не поможет пока не нашла этот курс!!! очень удобно, что можно заниматься с телефона и в любое время буквально за 2 месяца я стала гораздо здоровее, легче ходить, исчезла отдышка и тело конкретно изменилось!! курс просто отличный, все понятно и легко я в восторге!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="get">
+        <div class="get__inner container censored">
+          <div class="get__wrapper"> 
+            <div class="get__block-text">
+              <h2 class="get__title">Приобрети тело мечты</h2>
+              <div class="get__text">Приобретай новые привычки уже<br> сегодня</div>
+              <div class="get__text get__text--mobile">Хочешь избавиться от целлюлита, изменить свою внешность и чувствовать себя уверенней</div>
+            </div>
+            <div class="get__block-form">
+              <h3 class="get__form-title">Стань лучшей версией себя!</h3><a class="get__link btn" href="#order-form">Попробуй</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="after censored">
+        <div class="after__inner container"> 
+          <div class="after__title">После марафона</div>
+          <ul class="after__list"> 
+            <li class="after__item">У тебя появится вера в себя</li>
+            <li class="after__item">Уйдет лишний вес</li>
+            <li class="after__item">Уменьшится количество целлюлита</li>
+            <li class="after__item">Улучшится состояние всего тела и самочувствие</li>
+            <li class="after__item">Ты станешь сильней не только физически, но и морально</li>
+            <li class="after__item">Повысится продуктивность и количество энергии</li>
+            <li class="after__item">Ты забудешь проблемы с питанием и опасные диеты</li>
+          </ul>
+        </div><img class="after__img after__img--fr" src="img/after-bg-fr.png" alt="" loading="lazy"><img class="after__img after__img--fl" src="img/after-bg-fl.png" alt="" loading="lazy"><img class="after__img after__img--fc" src="img/main-peach.png" alt="" loading="lazy">
+      </div>
+      <div class="cabinet"> 
+        <div class="cabinet__inner container"> 
+          <div class="cabinet__top"> 
+            <div class="cabinet__block"> 
+              <div class="cabinet__title">УДобный личный кабинет</div>
+              <p class="cabinet__descr">Все занятия, рекомендации и упражнения будут в вашем личном кабинете на ПК и мобильном устройстве. Вам не нужно распечатывать pdf или сохранять закладки в браузере, доступ к курсу в любое время, в любом месте</p>
+            </div>
+            <ul class="cabinet__list"> 
+              <li class="cabinet__item">Узнай норму калорий</li>
+              <li class="cabinet__item">Следи за количеством выпитой воды</li>
+              <li class="cabinet__item">Отмечай сделанные упражнения</li>
+              <li class="cabinet__item">Следи за прогрессом своего похудения!</li>
+            </ul>
+          </div>
+          <div class="cabinet__slider"> 
+            <div class="slider-cabinet"> 
+              <div class="slider-cabinet__item"> 
+                <div class="slider-cabinet__block"> 
+                  <div class="slider-cabinet__weight">Обновить вес</div>
+                  <div class="slider-cabinet__tracker"> 
+                    <div class="slider-cabinet__text">Трекер воды: 2,5 л.</div>
+                    <div class="slider-cabinet__icons"> <img src="img/cabinet-icon-glass.svg" alt=""><img src="img/cabinet-icon-glass.svg" alt=""><img src="img/cabinet-icon-glass.svg" alt=""><img src="img/cabinet-icon-glass.svg" alt=""><img src="img/cabinet-icon-glass-plus.svg" alt=""><img src="img/cabinet-icon-glass-plus.svg" alt=""><img src="img/cabinet-icon-glass-plus.svg" alt=""><img src="img/cabinet-icon-glass-plus.svg" alt=""><img src="img/cabinet-icon-glass-plus.svg" alt=""><img src="img/cabinet-icon-glass-plus.svg" alt=""></div>
+                  </div>
+                  <div class="slider-cabinet__cal">
+                    <div class="slider-cabinet__cal-text">Суточная норма калорий</div>
+                    <div class="slider-cabinet__cal-rate">2599<br> из 2500</div>
+                  </div>
+                </div>
+                <div class="slider-cabinet__img"> <img src="img/cabinet-slide.png" alt="график динамики веса"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order censored">
+        <div class="order__inner container">
+          <h2 class="order__title" id="order-form">Приобрети уверенность в себе</h2>
+          <p class="order__descr">После курса ты начнешь привлекать внимание противоположенного пола и получишь миллион вопросов от завистниц “как ты это сделала”</p>
+          <div class="order__block"> <img class="order__block-img order__block-img--left" src="img/main-peach.png" alt="" loading="lazy"><img class="order__block-img order__block-img--right" src="img/main-peach.png" alt="" loading="lazy">
+            <h3 class="order__block-title">Только сегодня<br> курс по самой низкой цене</h3>
+            <div class="order__block-prices"> 
+                
+            </div>
+            <div class="order__block-text">Нажмите кнопку, чтобы получить доступ к онлайн-курсу</div>
+              <a href="https://clickfrm.com/CdLs?utm_content=<?php echo $client->getSubId() ?>" class="order__block-button">Получить за 29 руб.</a>
+          </div>
+            <div class="ad"> 
+              <div class="ad__block">
+                <p class="ad__text">В подарок за подписку на курс вы получите <mark>бесплатный гайд</mark> по созданию <span>креативных сторис в Instagram</span></p><img class="ad__img" src="img/promo-icon-gift.png" alt="подарок">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq__inner container"> 
+          <h2 class="faq__title">Faq</h2>
+          <div class="faq__list"> 
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Обязательно ли покупать дорогие скрабы, щетки и уходовые средства для тела? </h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Вы можете купить скраб для тела, но гораздо проще сделать его самой.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Занятия марафона проходят в какое-то определённое время? </h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Нет. Все тренировки доступны в вашем личном кабинете, поэтому время и место занятий вы выбираете сами.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Я никогда не занималась спортом и не боролась с целлюлитом. Подойдет ли мне марафон? </h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Да! Наши тренировки по силам новичку. Кроме того, тренировки проходят в формате «повторяй за мной». Они подойдут всем, у кого нет противопоказаний по занятию спортом. Особенно часто на сторону домашнего фитнеса переходят те, у кого нет времени на фитнес-клуб; кому не хватает самодисциплины и мотивации; у кого нет понимания, как правильно тренироваться и питаться; кому не с кем оставить ребенка.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Можно ли заменить инвентарь для спортивных упражнений или обойтись без него? </h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">
+                Да, например: <br>1. Спортивный коврик или плед/полотенце. <br>
+                2. Две гантели по 1 кг или две бутылки с водой. <br>
+                3. Фитнес резинка для сопротивления в упражнениях на гибкость. <br>
+                4. Степ-платформу, можно заменить невысоким стулом/диваном (главное, чтобы он был устойчив) /кроватью 
+              </div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Когда я получу доступ к марафону?</h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Сразу после оплаты.  Ваш марафон находится в личном кабинете, письмо с данными для входа в личный кабинет было отправлено на указанную Вами электронную почту, проверьте папку “Спам”, если и там нет письма, обратитесь в службу поддержки по адресу support@netcellulite.com.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Я живу не в России.  Удобно ли мне будет заниматься?</h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Прелесть в том, что место, где вы живете, не имеет никакого значения. Вам понадобится лишь телефон, планшет или компьютер с доступом в интернет.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Есть ли какие-либо противопоказания для упражнений, скрабов и обертываний?</h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Уточните у своего лечащего врача, если в данный момент у вас имеются противопоказания к занятию спортом.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Оплатила марафон, когда откроется доступ?</h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">В течение 10 минут после оплаты на указанную вами электронную почту, отправляется письмо-уведомление с подтверждением покупки и данными для входа в личный кабинет, где находятся все материалы. После входа в личный кабинет вы можете приступить к выбранной программе в любое время.</div>
+            </div>
+            <div class="faq__item"> 
+              <div class="faq__question">
+                <h3 class="faq__question-text">Указала неправильную почту при оплате</h3><img class="faq__question--down" src="img/faq-arrow-down.png" width="20" height="12" alt=""><img class="faq__question--up" src="img/faq-arrow-up.png" width="20" height="12" alt="">
+              </div>
+              <div class="faq__answer faq--decor">Если при оплате вы указали неправильный электронный адрес, пожалуйста, обратитесь в службу поддержки support@netcellulite.com, мы вышлем вам письмо с доступом повторно.</div>
+            </div>
+          </div>
+        </div><img class="faq__img faq__img--flower-right" src="img/faq-bg-flower-r.png" alt="" loading="lazy"><img class="faq__img faq__img--flower-left" src="img/faq-bg-flower-l.png" alt="" loading="lazy"><img class="faq__img faq__img--scrab" src="img/about-bg.png" alt="" loading="lazy"><img class="faq__img faq__img--bg-scrab" src="img/faq-bg-scrab.png" alt="" loading="lazy"><img class="faq__img faq__img--bg-mass" src="img/faq-bg-mass.png" alt="" loading="lazy"><img class="faq__img faq__img--bg-mobile" src="img/faq-bg-scrab-mob.png" alt="" loading="lazy">
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item footer__item--start">
+              <div class="footer__info footer__info--legal js-legal"></div>
+            </div>
+            <div class="footer__item footer__item--middle">
+              <div class="footer__info">Принимаем к оплате:</div>
+              <div class="footer__pay"><img class="footer__img" src="img/fvisa.png" width="39"><img class="footer__img" src="img/fmc.png" width="21"><img class="footer__img" src="img/fmir.png" width="43"></div>
+              <div class="footer__info">Платеж защищен</div>
+              <div class="footer__pay"><img class="footer__img" src="img/flock.png" width="36"><img class="footer__img" src="img/flock2.png" width="31"><img class="footer__img" src="img/fsecure.png" width="18"><img class="footer__img" src="img/fpci.png" width="28"></div>
+            </div>
+            <div class="footer__item"><a class="footer__info footer__info--link footer__info--mb js-destPolicy" href="policy.pdf" target="_blank">Политика конфиденциальности</a><a class="footer__info footer__info--link footer__info--mb js-destOffer" href="offer.pdf" target="_blank">Оферта</a><a class="footer__info footer__info--link footer__info--mb js-unsubscribe" href="https://client.skill-pad.com/unsubscribe" target="_blank">Отменить подписку</a><a class="footer__info footer__info--link footer__info--mb js-destPermission" href="permission.pdf" target="_blank">Политика обработки данных</a><a class="footer__info footer__info--link footer__info--mb js-destPermission" href="tariff.pdf" target="_blank">Тарифы</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+          <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button class="hystmodal__close" data-hystclose>Закрыть</button>
+            <div class="modal">
+              <div class="modal__inner" id="questionScreen"> 
+                <h2 class="question"></h2>
+                <ul class="answer__list"> 
+                  <li class="answer__item"> 
+                    <input type="radio" name="answer" id="0">
+                    <label class="answer__input" for="0" data-opt="0" onclick="checkAnswer(this)"> </label>
+                  </li>
+                  <li class="answer__item"> 
+                    <input type="radio" name="answer" id="1">
+                    <label class="answer__input" for="1" data-opt="1" onclick="checkAnswer(this)"></label>
+                  </li>
+                  <li class="answer__item"> 
+                    <input type="radio" name="answer" id="2">
+                    <label class="answer__input" for="2" data-opt="2" onclick="checkAnswer(this)"></label>
+                  </li>
+                  <li class="answer__item"> 
+                    <input type="radio" name="answer" id="3">
+                    <label class="answer__input" for="3" data-opt="3" onclick="checkAnswer(this)"></label>
+                  </li>
+                </ul>
+                <button class="answer__btn" onclick="showNext()">Далее</button>
+                <button class="answer__btn answer__btn--back" onclick="showPrev()">Назад</button>
+                <div class="answer__error">Выберите один вариант ответа</div>
+              </div>
+              <div class="modal__inner" id="resultScreen"> 
+                <h2 class="result__title">Результаты</h2>
+                <div class="result__block"> 
+                  <div class="result__text"></div>
+                </div>
+
+                <div class="result__answer result__answer--dec"> </div>
+                  <br><br> <center><a class="result__link" href="https://clickfrm.com/CdLs?utm_content=<?php echo $client->getSubId() ?>" data-hystclose>Избавиться от целлюлита за 29 руб.</a><a class="result__link--mobile" href="https://clickfrm.com/CdLs?utm_content=<?php echo $client->getSubId() ?>" data-hystclose>Избавиться от целлюлита за 29 руб.</a></center>
+              </div>
+              <div class="censored"><img class="modal__bg modal__bg0" src="img/modal-q0-censor.jpg" alt=""><img class="modal__bg modal__bg1" src="img/modal-q1-censor.jpg" alt=""><img class="modal__bg modal__bg2" src="img/modal-q2-censor.jpg" alt=""><img class="modal__bg modal__bg3" src="img/modal-q3-censor.jpg" alt=""><img class="modal__bg modal__bg4" src="img/modal-q4-censor.jpg" alt=""><img class="modal__bg modal__bg11" src="img/modal-a1-censor.jpg" alt=""><img class="modal__bg modal__bg22" src="img/modal-a2-censor.jpg" alt=""><img class="modal__bg modal__bg33" src="img/modal-a3-censor.jpg" alt=""><img class="modal__bg modal__bg44" src="img/modal-a4-censor.jpg" alt=""><img class="modal__bg modal__mobile" src="img/modal-q-mobile.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="loader">
+      <div class="loader__spinner"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/docs.js"> </script>
+    <script src="js/hystmodal.min.js"> </script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
